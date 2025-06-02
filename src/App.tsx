@@ -127,15 +127,15 @@ function App() {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              <a href="#" className="group relative">
+              <a href="https://github.com/sahansri" className="group relative">
                 <div className="absolute inset-0 bg-blue-400 rounded-lg blur transition-all opacity-0 group-hover:opacity-25" />
                 <Github className="w-8 h-8 text-gray-400 group-hover:text-white transition-colors duration-300 relative" />
               </a>
-              <a href="#" className="group relative">
+              <a href="https://www.linkedin.com/in/sahansri" className="group relative">
                 <div className="absolute inset-0 bg-purple-400 rounded-lg blur transition-all opacity-0 group-hover:opacity-25" />
                 <Linkedin className="w-8 h-8 text-gray-400 group-hover:text-white transition-colors duration-300 relative" />
               </a>
-              <a href="#" className="group relative">
+              <a href="sahan.srimal400@gmail.com" className="group relative">
                 <div className="absolute inset-0 bg-pink-400 rounded-lg blur transition-all opacity-0 group-hover:opacity-25" />
                 <Mail className="w-8 h-8 text-gray-400 group-hover:text-white transition-colors duration-300 relative" />
               </a>
