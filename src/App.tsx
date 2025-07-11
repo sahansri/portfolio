@@ -83,71 +83,102 @@ function App() {
           />
         </div>
         <div className="container mx-auto px-6 relative z-10">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto"
-          >
-            <motion.div 
-              initial={{ y: 20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="text-sm font-mono text-blue-400 mb-4 tracking-wider"
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
             >
-              Hello, I'm
-            </motion.div>
-            <motion.h1 
-              className="text-7xl md:text-9xl font-bold mb-8 relative"
-              initial={{ y: 40, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.3 }}
-            >
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 relative z-10">
-                Sahan Srimal
-              </span>
-              <motion.span
-                className="absolute -inset-x-6 inset-y-0 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 blur-3xl -z-10"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
+              <motion.div 
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                className="text-sm font-mono text-blue-400 mb-4 tracking-wider"
+              >
+                Hello, I'm
+              </motion.div>
+              <motion.h1 
+                className="text-5xl md:text-7xl font-bold mb-8 relative"
+                initial={{ y: 40, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3 }}
+              >
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 relative z-10">
+                  Sahan Srimal
+                </span>
+                <motion.span
+                  className="absolute -inset-x-6 inset-y-0 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 blur-3xl -z-10"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.5 }}
+                />
+              </motion.h1>
+              <motion.p 
+                className="text-xl text-gray-400 mb-12 leading-relaxed"
+                initial={{ y: 40, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.4 }}
+              >
+                Code. Create. Solve.
+I’m a developer who turns ideas into digital solutions—whether it’s a web platform, mobile app, or a tool that makes life easier. Every project is a step toward learning, impact, and innovation.
+              </motion.p>
+              <motion.div 
+                className="flex space-x-6"
+                initial={{ y: 40, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.5 }}
-              />
-            </motion.h1>
-            <motion.p 
-              className="text-2xl text-gray-400 mb-12 max-w-2xl leading-relaxed"
-              initial={{ y: 40, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.4 }}
-            >
-              Building the future through code, one pixel at a time. Specializing in AI, blockchain, and immersive web experiences.
-            </motion.p>
-            <motion.div 
-              className="flex space-x-6"
-              initial={{ y: 40, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.5 }}
-            >
-              <a href="https://github.com/sahansri" className="group relative">
-                <div className="absolute inset-0 bg-blue-400 rounded-lg blur transition-all opacity-0 group-hover:opacity-25" />
-                <Github className="w-8 h-8 text-gray-400 group-hover:text-white transition-colors duration-300 relative" />
-              </a>
-              <a href="https://www.linkedin.com/in/sahansri" className="group relative">
-                <div className="absolute inset-0 bg-purple-400 rounded-lg blur transition-all opacity-0 group-hover:opacity-25" />
-                <Linkedin className="w-8 h-8 text-gray-400 group-hover:text-white transition-colors duration-300 relative" />
-              </a>
-              <a href="sahan.srimal400@gmail.com" className="group relative">
-                <div className="absolute inset-0 bg-pink-400 rounded-lg blur transition-all opacity-0 group-hover:opacity-25" />
-                <Mail className="w-8 h-8 text-gray-400 group-hover:text-white transition-colors duration-300 relative" />
-              </a>
+              >
+                <a href="https://github.com/sahansri" className="group relative">
+                  <div className="absolute inset-0 bg-blue-400 rounded-lg blur transition-all opacity-0 group-hover:opacity-25" />
+                  <Github className="w-8 h-8 text-gray-400 group-hover:text-white transition-colors duration-300 relative" />
+                </a>
+                <a href="https://www.linkedin.com/in/sahansri" className="group relative">
+                  <div className="absolute inset-0 bg-purple-400 rounded-lg blur transition-all opacity-0 group-hover:opacity-25" />
+                  <Linkedin className="w-8 h-8 text-gray-400 group-hover:text-white transition-colors duration-300 relative" />
+                </a>
+                <a href="mailto:sahan.srimal400@gmail.com" className="group relative">
+                  <div className="absolute inset-0 bg-pink-400 rounded-lg blur transition-all opacity-0 group-hover:opacity-25" />
+                  <Mail className="w-8 h-8 text-gray-400 group-hover:text-white transition-colors duration-300 relative" />
+                </a>
+              </motion.div>
             </motion.div>
-          </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="flex justify-center lg:justify-end"
+            >
+              <div className="relative">
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 rounded-full blur-xl opacity-30"
+                  animate={{
+                    scale: [1, 1.1, 1],
+                    opacity: [0.3, 0.5, 0.3]
+                  }}
+                  transition={{
+                    duration: 3,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+                <motion.img
+                  src="./src/assests/sahan.jpg"
+                  alt="Sahan Srimal"
+                  className="w-96 h-96 md:w-[30rem] md:h-[30rem] rounded-full object-cover border-4 border-white/10 relative z-10"
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.3 }}
+                />
+              </div>
+            </motion.div>
+          </div>
         </div>
         <motion.div 
           className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
         >
-          <Sparkles className="w-6 h-6 text-blue-400" />
+          <Sparkles className="w-6 h- text-blue-400" />
         </motion.div>
       </header>
 
@@ -275,7 +306,7 @@ function App() {
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="mailto:your.email@example.com"
+              href="mailto:sahan.srimal400@gmail.com"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 rounded-full text-lg font-semibold transition-all duration-300 group"
             >
               Get in Touch
@@ -288,7 +319,7 @@ function App() {
       {/* Footer */}
       <footer className="py-8 border-t border-white/10">
         <div className="container mx-auto px-6 text-center text-gray-400">
-          <p>© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Sahan Srimal. All rights reserved.</p>
         </div>
       </footer>
     </div>
