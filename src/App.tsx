@@ -261,7 +261,7 @@ const App = () => {
         { name: "Java", level: 90 },
         { name: "Python", level: 88 },
         { name: "JavaScript", level: 92 },
-        { name: "C++", level: 85 },
+        { name: "C", level: 85 },
         { name: "SQL", level: 87 },
         { name: "PHP", level: 80 }
       ],
@@ -272,8 +272,7 @@ const App = () => {
       category: "Web Technologies",
       items: [
         { name: "React", level: 95 },
-        { name: "Node.js", level: 88 },
-        { name: "Express", level: 85 },
+        { name: "Spring Boot", level: 88 },
         { name: "MongoDB", level: 82 },
         { name: "HTML/CSS", level: 98 },
         { name: "REST APIs", level: 90 }
@@ -285,11 +284,10 @@ const App = () => {
       category: "Tools & Technologies",
       items: [
         { name: "Git", level: 92 },
-        { name: "Docker", level: 75 },
-        { name: "AWS", level: 70 },
-        { name: "Firebase", level: 85 },
+        { name: "Docker", level: 50 },
+        { name: "AWS", level: 50 },
         { name: "MySQL", level: 88 },
-        { name: "Linux", level: 80 }
+        { name: "Vercel", level: 80 }
       ],
       icon: <Brain className="w-8 h-8 text-pink-400" />,
       gradient: "from-pink-500/20 to-orange-500/20"
