@@ -1,6 +1,8 @@
 import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
 import { Github, Linkedin, Mail, Code2, Brain, Layout, GraduationCap, ExternalLink, Zap, Sparkles, Menu, X, ArrowRight, Download, Heart } from 'lucide-react';
 import profile from './assets/sahan_.jpeg';
+import driveline from './assets/Driveline.png';
+import riuss from './assets/RIUSS.png';
 import { useState } from 'react';
 
 // Advanced Animated Background Component
@@ -195,7 +197,7 @@ const App = () => {
     {
       title: "DriveLine - Bus Management System",
       description: "DriveLine is a web-based fleet operations system used by both drivers and admins. No mobile app-everything runs on the web dashboard, optimized for both desktop and mobile browsers.The platform connects drivers, buses, and admin teams in one unified environment.",
-      image: "src/assets/Driveline.png",
+      image: driveline,
       tech: ["React", "Spring Boot", "MongoDB", "WebSocket", "Chart.js"],
       link: "https://bitbucket.org/sahansri/ase_project_team_01/src/main/",
       demo: "https://driveline-seven.vercel.app/",
@@ -215,7 +217,7 @@ const App = () => {
     {
       title: "RIUSS 2025 International Conference Website - University of Ruhuna",
       description: "Designing and developing the complete website for RIUSS 2025 Conference.In this website provides the informations about the conference including instructions and about the conference.",
-      image: "src/assets/RIUSS.png",
+      image: riuss,
       tech: ["React js", "Tailwind CSS", "JavaScript"],
       link: "https://github.com/sahansri/Riuss-2025",
       demo: " https://www.sci.ruh.ac.lk/conference/RIUSS2025",
