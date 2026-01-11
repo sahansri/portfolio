@@ -193,65 +193,36 @@ const Navigation = () => {
 const App = () => {
   const projects = [
     {
-      title: "Student Management System",
-      description: "Full-stack web application for managing university student records with real-time updates and advanced analytics dashboard",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800",
-      tech: ["React", "Node.js", "MongoDB", "Express", "Socket.io"],
-      link: "https://github.com/sahansri",
-      demo: "https://student-management-demo.com",
+      title: "DriveLine - Bus Management System",
+      description: "DriveLine is a web-based fleet operations system used by both drivers and admins. No mobile app-everything runs on the web dashboard, optimized for both desktop and mobile browsers.The platform connects drivers, buses, and admin teams in one unified environment.",
+      image: "src/assets/Driveline.png",
+      tech: ["React", "Spring Boot", "MongoDB", "WebSocket", "Chart.js"],
+      link: "https://bitbucket.org/sahansri/ase_project_team_01/src/main/",
+      demo: "https://driveline-seven.vercel.app/",
       status: "Completed",
       featured: true
     },
     {
-      title: "Algorithm Visualizer",
-      description: "Interactive web platform to visualize sorting and searching algorithms with step-by-step animations and complexity analysis",
+      title: "WelfareNet - Community Welfare Management System",
+      description: "WelfareNet is a comprehensive web application designed to streamline the management of community welfare programs. It enables efficient tracking of beneficiaries, resource allocation, and program outcomes, facilitating better decision-making for welfare organizations.",
       image: "https://images.unsplash.com/photo-1518932945647-7a1c969f8be2?auto=format&fit=crop&q=80&w=800",
-      tech: ["JavaScript", "HTML5 Canvas", "CSS3", "D3.js", "React"],
+      tech: ["React", "Flutter","Spring Boot", "AWS S3", "SQL"],
       link: "https://github.com/sahansri",
       demo: "https://algo-visualizer-demo.com",
       status: "In Progress",
       featured: true
     },
     {
-      title: "E-Commerce Mobile App",
-      description: "React Native mobile application with payment integration, real-time inventory, push notifications, and advanced user analytics",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=800",
-      tech: ["React Native", "Firebase", "Stripe API", "Redux", "Node.js"],
-      link: "https://github.com/sahansri",
-      demo: "https://ecommerce-app-demo.com",
+      title: "RIUSS 2025 International Conference Website - University of Ruhuna",
+      description: "Designing and developing the complete website for RIUSS 2025 Conference.In this website provides the informations about the conference including instructions and about the conference.",
+      image: "src/assets/RIUSS.png",
+      tech: ["React js", "Tailwind CSS", "JavaScript"],
+      link: "https://github.com/sahansri/Riuss-2025",
+      demo: " https://www.sci.ruh.ac.lk/conference/RIUSS2025",
       status: "Completed",
       featured: false
     },
-    {
-      title: "Weather Prediction ML Model",
-      description: "Advanced machine learning model using ensemble methods to predict weather patterns with 92% accuracy and climate trend analysis",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&q=80&w=800",
-      tech: ["Python", "TensorFlow", "Pandas", "Scikit-learn", "FastAPI"],
-      link: "https://github.com/sahansri",
-      demo: "https://weather-ml-demo.com",
-      status: "Academic Project",
-      featured: true
-    },
-    {
-      title: "Real-time Chat Application",
-      description: "Full-featured chat application with file sharing, voice messages, group chats, and end-to-end encryption",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?auto=format&fit=crop&q=80&w=800",
-      tech: ["React", "Socket.io", "Node.js", "MongoDB", "WebRTC"],
-      link: "https://github.com/sahansri",
-      demo: "https://chat-app-demo.com",
-      status: "Completed",
-      featured: false
-    },
-    {
-      title: "Blockchain Voting System",
-      description: "Secure and transparent voting system built on blockchain technology with smart contracts and voter verification",
-      image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&q=80&w=800",
-      tech: ["Solidity", "Web3.js", "React", "Ethereum", "IPFS"],
-      link: "https://github.com/sahansri",
-      demo: "https://blockchain-voting-demo.com",
-      status: "In Progress",
-      featured: true
-    }
+    
   ];
 
   const skills = [
