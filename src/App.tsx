@@ -61,7 +61,7 @@ const TECH_STACK = [
   { name: "Java", slug: "java", color: "#FFFFFF" },
   { name: "Spring Boot", slug: "spring", color: "#6DB33F" },
   { name: "React", slug: "react", color: "#61DAFB" },
-  { name: "Flutter", slug: "flutter", color: "#02569B" },
+  { name: "Flutter", slug: "flutter", color: "#02569B" }, 
   { name: "MySQL", slug: "mysql", color: "#4479A1" },
   { name: "MongoDB", slug: "mongodb", color: "#47A248" },
   { name: "Docker", slug: "docker", color: "#2496ED" },
@@ -260,7 +260,7 @@ const AboutSection = () => {
               <GraduationCap className="text-blue-400" size={24} />
             </div>
             <h3 className="text-lg font-bold text-white mb-1">University of Ruhuna</h3>
-            <p className="text-slate-400 text-sm">BSc. in Computer Science</p>
+            <p className="text-slate-400 text-sm">BSc.(Hons) in Computer Science</p>
             <p className="text-slate-500 text-xs mt-2">Expected Graduation: 2026</p>
           </motion.div>
 
@@ -310,8 +310,8 @@ const TechSlider = () => {
           {sliders.map((tech, index) => (
             <div key={`${tech.name}-${index}`} className="group flex flex-col items-center justify-center gap-3 min-w-[5rem] cursor-pointer">
               <div className="relative w-12 h-12 md:w-14 md:h-14 transition-transform duration-300 group-hover:scale-110">
-                <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tech.slug}/${tech.slug}-original.svg`} alt={tech.name} className="w-full h-full object-contain absolute inset-0 transition-opacity duration-300 group-hover:opacity-0" />
-                <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tech.slug}/${tech.slug}-original.svg`} alt={tech.name} className="w-full h-full object-contain absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tech.slug}/${tech.slug}-original.svg`} onError={(e) => { (e.currentTarget as HTMLImageElement).src = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tech.slug}/${tech.slug}-original-wordmark.svg`; }} alt={tech.name} className="w-full h-full object-contain absolute inset-0 transition-opacity duration-300 group-hover:opacity-0" />
+                <img src={`https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tech.slug}/${tech.slug}-original.svg`} onError={(e) => { (e.currentTarget as HTMLImageElement).src = `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${tech.slug}/${tech.slug}-original-wordmark.svg`; }} alt={tech.name} className="w-full h-full object-contain absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               </div>
               <span className="text-sm font-medium text-slate-500 group-hover:text-slate-300 transition-colors">{tech.name}</span>
             </div>
